@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "TheSans-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/font/TheSans-Bold.otf") format("opentype"); /* Corrected format */
+}
+@font-face {
+  font-family: "TheSans-light";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/font/TheSansArabic-Light.otf") format("opentype"); /* Corrected format */
+}
+@font-face {
+  font-family: "font-TheSansArabic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/font/TheSansArabic-Light.otf") format("opentype"); /* Corrected format */
+}

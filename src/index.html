@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+      @font-face {
+        font-family: "TheSans-bold";
+        font-style: normal;
+        font-weight: 700;
+        src: url("./assets/font/TheSans-Bold.otf") format("opentype"); /* Corrected format */
+      }
+      @font-face {
+        font-family: "TheSans-light";
+        font-style: normal;
+        font-weight: 700;
+        src: url("./assets/font/TheSansArabic-Light.otf") format("opentype"); /* Corrected format */
+      }
+
+      body {
+        font-family: "TheSans-light";
+        direction: rtl;
+      }
+      .TheSans-bold {
+        font-family: "TheSans-bold" !important ;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      class="bg-white py-6 px-[120px] flex justify-between z-20 fixed w-full flex-row-reverse"
+      style="box-shadow: 0px 2px 20px 0px #00000033"
+    >
+      <div>
+        <ul class="flex justify-center items-center">
+          <li class="mx-4 text-lg text-[#4B4B4B]"><a href="">الرئيسة</a></li>
+          <li class="mx-4 text-lg text-[#4B4B4B]"><a href="">من تحن</a></li>
+          <li class="mx-4 text-lg text-[#4B4B4B]">
+            <a href="">نشرة معلوماتية</a>
+          </li>
+          <li class="mx-4 text-lg">
+            <button
+              style="
+                background: radial-gradient(
+                  139.06% 221.96% at 108.36% 1.13%,
+                  #5f539f 0%,
+                  #3dc7f4 80.91%
+                );
+              "
+              class="font-bold rounded-[10px] py-4 px-5 text-lg text-white"
+            >
+              تواصل بنا
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img src="./assets/img/logoheader.svg" alt="" />
+      </div>
+    </header>
+
+    <div id="app" class="container mx-auto">
+      <div
+        class="relative mb-10"
+        style="background: linear-gradient(180deg, #5f539f 0%, #c6c2da 100%)"
+      >
+        <div class="flex justify-center items-center">
+          <div class="rounded-full w-[1040px] h-[1040px] bg-white"></div>
+        </div>
+        <h1
+          class="text-center font-bold text-[88px] text-[#5F539F] leading-[105px] absolute top-32 right-0 left-0"
+        >
+          انضم الى الكوكبة
+          <br />
+          الرقمية وامتلك نظامك المتكامل
+        </h1>
+        <h3
+          class="text-center text-2xl leading-[32px] text-[#4B4B4B] absolute top-96 whitespace-pre right-0 left-0 mx-auto"
+        >
+          ستتمكن من تحسين كفاءة عملك وتقليل الأخطاء والتكاليف الزائدة. ستحصل على
+          رؤية شاملة لأداء عملك وتقارير مفصلة تساعدك في اتخاذ القرارات
+          الاستراتيجية بناءً على بيانات دقيقة وفورية
+          <span class="text-[#3DC7F4]"
+            >ونقدم لك الدعم الفني اللازم طوال الوقت.</span
+          >
+        </h3>
+        <img
+          src="./assets/img/hero.png"
+          class="absolute top-[60%] right-0 left-0 mx-auto"
+          width="50%"
+          alt=""
+        />
+      </div>
+
+      <div class="flex justify-between flex-row-reverse relative items-center">
+        <div class="">
+          <h1 class="text-[88px] text-right text-[#5F539F] font-bold">
+            تمتع بإدارة وتحكم عالي
+          </h1>
+          <div class="flex justify-end">
+            <div>
+              <img src="./assets/img/playIcon.svg" alt="" />
+              <h1 class="font-bold my-1 text-2xl text-[#4B4B4B] TheSans-bold">
+                مقدرة على تتبع العمليات
+              </h1>
+              <p class="text-[16px] leading-[20.8px] text-[#4B4B4B] w-[80%]">
+                سهولة في تتبع العمليات من اي مكان ومن كل النقاط التي يتم فتحها
+              </p>
+            </div>
+            <div>
+              <img src="./assets/img/heartIcon.svg" alt="" />
+              <h1 class="font-bold text-2xl text-[#4B4B4B] my-1 TheSans-bold">
+                سهولة الاستخدام
+              </h1>
+              <p class="text-[16px] leading-[20.8px] text-[#4B4B4B] w-[80%]">
+                ايمكانية استخدام النظام بشكل مرن ومن اجهزة مختلفة ومتنوعة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[50%] z-1 my-20">
+          <img src="./assets/img/ipads.png" class="w-full" alt="" />
+        </div>
+        <img
+          src="./assets/img/gr.png"
+          class="absolute w-[80%] right-0 -z-50"
+          alt=""
+        />
+      </div>
+      <div class="flex justify-center items-center">
+        <div
+          class="bg-white rounded-[48px] flex justify-center items-center py-10 px-16 my-10"
+          style="
+            box-shadow: 0px 0px 13px 0px #9d9d9d40;
+            box-shadow: 0px 0px 13px 0px #9d9d9d40;
+          "
+        >
+          <div class="relative">
+            <h1 class="text-[#5F539F] text-2xl font-bold my-2">اهدافنا</h1>
+            <span
+              class="absolute"
+              style="
+                background: linear-gradient(90deg, #47b3e7 0%, #286481 100%);
+                content: '';
+                width: 65px;
+                height: 4px;
+              "
+            ></span>
+            <p class="text-[#252525] text-lg w-[70%] mt-2">
+              هنا نص هنا نص هنا نص هنا نص
+            </p>
+          </div>
+          <div class="relative">
+            <h1 class="text-[#5F539F] text-2xl font-bold my-2">اهدافنا</h1>
+            <span
+              class="absolute"
+              style="
+                background: linear-gradient(90deg, #47b3e7 0%, #286481 100%);
+                content: '';
+                width: 65px;
+                height: 4px;
+              "
+            ></span>
+            <p class="text-[#252525] text-lg w-[70%] mt-2">
+              هنا نص هنا نص هنا نص هنا نص
+            </p>
+          </div>
+          <div class="relative">
+            <h1 class="text-[#5F539F] text-2xl font-bold my-2">اهدافنا</h1>
+            <span
+              class="absolute"
+              style="
+                background: linear-gradient(90deg, #47b3e7 0%, #286481 100%);
+                content: '';
+                width: 65px;
+                height: 4px;
+              "
+            ></span>
+            <p class="text-[#252525] text-lg w-[70%] mt-2">
+              هنا نص هنا نص هنا نص هنا نص
+            </p>
+          </div>
+          <div class="relative">
+            <h1 class="text-[#5F539F] text-2xl font-bold my-2">اهدافنا</h1>
+            <span
+              class="absolute"
+              style="
+                background: linear-gradient(90deg, #47b3e7 0%, #286481 100%);
+                content: '';
+                width: 65px;
+                height: 4px;
+              "
+            ></span>
+            <p class="text-[#252525] text-lg w-[70%] mt-2">
+              هنا نص هنا نص هنا نص هنا نص
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-flow-col-dense mx-10 my-10">
+        <div class="relative">
+          <h1 class="text-[#5F539F] text-[50px] font-bold my-2 TheSans-bold">
+            من نحن
+          </h1>
+          <span
+            class="absolute top-20"
+            style="
+              background: linear-gradient(90deg, #47b3e7 0%, #286481 100%);
+              content: '';
+              width: 65px;
+              height: 4px;
+            "
+          ></span>
+          <p class="text-[#252525] text-2xl w-[70%] mt-3">
+            شركة برمجية رائدة في مجال انظمة ERP Next بكادر تقني عالي المهارات
+            ومتخصصون في المجال الصحي والإداري
+          </p>
+        </div>
+        <div>
+          <img
+            src="./assets/img/logo.svg"
+            class="self-center"
+            width="100%"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="">
+        <h1 class="font-bold text-[42px] text-center">الاسعار والباقات</h1>
+        <!-- Progress Bar -->
+        <div class="flex justify-center items-center w-full my-5">
+          <div class="w-[70%] mx-auto rounded-xl">
+            <div
+              class="bg-gray-200 dark:bg-gray-700 h-2 rounded-md flex items-center justify-between"
+              style="
+                background: linear-gradient(
+                  98.24deg,
+                  #4bf2b7 0%,
+                  #5061df 42%,
+                  #f1c7bd 96%
+                );
+              "
+            >
+              <div
+                class="w-[17px] h-[17px] rounded-full shadow bg-[#E2E8F0] border-[#7F60F9] border-4 border-solid"
+              ></div>
+              <div></div>
+              <div class="w-1/3 flex justify-end">
+                <div class="h-4 w-[3px] shadow bg-gray-700 rounded-sm"></div>
+              </div>
+              <div class="w-1/3 flex justify-end">
+                <div class="h-4 w-[3px] shadow bg-gray-700 rounded-sm"></div>
+              </div>
+              <div class="w-1/3 flex justify-end">
+                <div class="h-4 w-[3px] shadow bg-gray-700 rounded-sm"></div>
+              </div>
+              <div class="w-1/3 flex justify-end">
+                <div class="h-4 w-[3px] shadow bg-gray-700 rounded-sm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="flex justify-center my-10">
+          <div
+            class="rounded-md border-2 border-solid border-[#7e6af8] p-12 mx-4 my"
+          >
+            <h1 class="text-[#5F539F] text-lg font-bold mb-3">الاساسية</h1>
+            <h3 class="flex items-end">
+              /years
+              <span
+                class="text-[#5F539F] text-[60px] font-medium leading-[66px]"
+                >$99</span
+              >
+            </h3>
+            <hr class="border-1 border-[#4D4D51] my-3" />
+            <ul class="my-4">
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  ثلاثة حسابات و ادمن
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px] text-right">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  <span class="float-right">مساحة تخزين تصل الى </span> 100 G
+                </h1>
+              </li>
+
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  غير محدود من عمليات التنزيل
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  ثلاثة حسابات و ادمن
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  غير محدود من عمليات التنزيل
+                </h1>
+              </li>
+            </ul>
+            <div
+              class="flex justify-center mt-8 hover:bg-blue-500 hover:text-white"
+            >
+              <button
+                class="border-2 w-full border-[#7F60F9] p-4 rounded-md self-center"
+              >
+                احصل على 15 يوم مجاناً
+              </button>
+            </div>
+          </div>
+          <div
+            class="rounded-md border-2 border-solid border-[#7e6af8] p-12 mx-4 my"
+          >
+            <h1 class="text-[#5F539F] text-lg font-bold mb-3">الاساسية</h1>
+            <h3 class="flex items-end">
+              /years
+              <span
+                class="text-[#5F539F] text-[60px] font-medium leading-[66px]"
+                >$99</span
+              >
+            </h3>
+            <hr class="border-1 border-[#4D4D51] my-3" />
+            <ul class="my-4">
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  ثلاثة حسابات و ادمن
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px] text-right">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  <span class="float-right">مساحة تخزين تصل الى </span> 100 G
+                </h1>
+              </li>
+
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  غير محدود من عمليات التنزيل
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  ثلاثة حسابات و ادمن
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  غير محدود من عمليات التنزيل
+                </h1>
+              </li>
+            </ul>
+            <div
+              class="flex justify-center mt-8 hover:bg-blue-500 hover:text-white"
+            >
+              <button
+                class="border-2 w-full border-[#7F60F9] p-4 rounded-md self-center"
+              >
+                احصل على 15 يوم مجاناً
+              </button>
+            </div>
+          </div>
+          <div
+            class="rounded-md border-2 border-solid border-[#7e6af8] p-12 mx-4 my"
+          >
+            <h1 class="text-[#5F539F] text-lg font-bold mb-3">الاساسية</h1>
+            <h3 class="flex items-end">
+              /years
+              <span
+                class="text-[#5F539F] text-[60px] font-medium leading-[66px]"
+                >$99</span
+              >
+            </h3>
+            <hr class="border-1 border-[#4D4D51] my-3" />
+            <ul class="my-4">
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  ثلاثة حسابات و ادمن
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px] text-right">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  <span class="float-right">مساحة تخزين تصل الى </span> 100 G
+                </h1>
+              </li>
+
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  غير محدود من عمليات التنزيل
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  ثلاثة حسابات و ادمن
+                </h1>
+              </li>
+              <li class="flex items-center my-[10px]">
+                <img src="./assets/img/checkIcone.svg" alt="" />
+                <h1 class="text-[16px] leading-[24px] text-[#071A34] mx-2">
+                  غير محدود من عمليات التنزيل
+                </h1>
+              </li>
+            </ul>
+            <div
+              class="flex justify-center mt-8 hover:bg-blue-500 hover:text-white"
+            >
+              <button
+                class="border-2 w-full border-[#7F60F9] p-4 rounded-md self-center"
+              >
+                احصل على 15 يوم مجاناً
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="self-end">
+          <h1 class="TheSans-bold">معلومات التواصل</h1>
+          <p>شارع الثلاثين - برج الثلاثين - الدور الثالث</p>
+          <p>شقة 1</p>
+          <p>هاتف:</p>
+          <p>+967773234337</p>
+          <p>بريد إلكتروني: info@natsoft-erp.com</p>
+        </div>
+        <div class="self-end text-xm text-center bg-slate-700">
+          2024 All Rights Reserved Natsoft.com
+        </div>
+        <div class="self-end">
+          <h1 class="TheSans-bold">معلومات التواصل</h1>
+          <p>شارع الثلاثين - برج الثلاثين - الدور الثالث</p>
+          <p>شقة 1</p>
+          <p>هاتف:</p>
+          <p>+967773234337</p>
+          <p>بريد إلكتروني: info@natsoft-erp.com</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
